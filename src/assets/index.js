@@ -27,7 +27,6 @@ import burgur from "./burgur.png";
 import lemon from "./lemon.png";
 import gfoods from "./gfoods.jpeg";
 import chocolate from "./chocolate.png";
-import pantu  from "./Pantu.jpg";
 import charan  from "./charan.jpg";
 import loveboy from "./loveboy.jpg";
 import cake from "./cake.png";
@@ -41,7 +40,6 @@ export {
   airbnb,
   bill,
   gfoods,
-  pantu,
   loveboy,
   charan,
   chocolate,

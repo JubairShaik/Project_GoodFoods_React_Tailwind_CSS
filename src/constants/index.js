@@ -1,4 +1,4 @@
-import { people01, people02,pantu,loveboy,charan, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02 ,loveboy,charan, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -66,7 +66,7 @@ export const feedback = [
       "The food was exceptional,the service was outstanding I would highly recommend this restaurant to anyone looking for a fine dining experience.",
     name: "Car-Tikk",
     title: "CR & Panthuluu",
-    img:pantu,
+    img:charan,
   },
   {
     id: "feedback-3",
