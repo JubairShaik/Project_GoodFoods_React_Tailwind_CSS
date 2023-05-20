@@ -2,11 +2,11 @@ import styles from "../style";
 import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 import {useContext } from "react";
-import UserContext  from "../utils/userContext"
+// import UserContext  from "../utils/userContext"
 
 const Footer = () => {
 
-  const {user} = useContext(UserContext)
+  // const {user} = useContext(UserContext)
 
   return(
   
