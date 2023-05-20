@@ -3,7 +3,7 @@ import Card from './Card';
 import {mainId, swiggy_api_URL} from './constants';
 import Shimmer from './Shimmer';
 import { Link  } from "react-router-dom";
-// import UserContext  from "../utils/userContext" 
+ 
 import  {addItem,removeItem} from '../utils/cartSlice';
 import { useDispatch } from 'react-redux';
 
@@ -22,7 +22,7 @@ const Apidata = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filterdRestaurants , setfilterdRestaurants] = useState([]);
   const [searchText , setsearchText] = useState("");
-  // const {user,setUser} = useContext(UserContext)
+ 
   
   useEffect(() => {
      //A P I  C A L L

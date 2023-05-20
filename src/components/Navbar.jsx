@@ -131,29 +131,4 @@ export default Navbar;
 
 
 
-
-{/*
-
-<div className="mx-5 px-4 gap-5 flex items-center ">
-      {isLoggedin ? (
-        <button  className=" text-white bg-red-400" onClick={()=>setIsLoggedIn(false)}>Logout</button>
-     ):(
-        <button className="bg-red-400"  onClick={()=>setIsLoggedIn(true)}>Login</button>
-      )}
-        </div>
- {
-        isAuthenticated ? (
-          <Link to="/">
-          <div className=" select-none sm:mx-14 mx-2  flex sm:gap-3  gap-1 items-center font-poppins text-white">
-            <img  className="sm:h-10 h-5 rounded-full " src={user.picture} alt={user.name} />    
-            <h1 className="sm:text-xl text-[14px]  font-semibold   ">{user.name}</h1>        
-          </div>
-          </Link>
-        ):(  
-       <span className="sm:w-[100px]  mr-[12rem] justify-center font-poppins items-center font-bold
-       text-yellow-500 text-xl md:text-3xl  h-[32px]">GoodFoods
-       </span>
-        )
-      }
-         
-*/}
+ 

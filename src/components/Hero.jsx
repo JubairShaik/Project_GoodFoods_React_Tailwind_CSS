@@ -2,12 +2,12 @@
 import {discount ,burgur} from '../assets';
 import styles from '../style' ;
 import GetStarted from './GetStarted'
-import UserContext  from "../utils/userContext"
+// import UserContext  from "../utils/userContext"
 import { useContext } from "react";
  
 const Hero = () => {
 
-  const {user} = useContext(UserContext);
+  // const {user} = useContext(UserContext);
 
   return(
   
@@ -18,8 +18,7 @@ const Hero = () => {
       <div className={`flex-4 ${styles.flexStart}
       flex-col xl:px-0 sm:px-16 px-6 `}>
 
-      <p className="sm:text-[35px]  animate-bounce p-3 text-sm  font-medium  font-poppins  textorang sm:font-bold">Hello , {user.name}</p>
-
+ 
         <div className="flex flex-row  items-center py-[6px] mb-2
         px-4 bg-discount-gradient rounded-[10px] space-x-4 ">
 

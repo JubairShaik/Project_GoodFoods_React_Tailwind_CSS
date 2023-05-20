@@ -2,12 +2,9 @@ import styles from "../style";
 import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 import {useContext } from "react";
-// import UserContext  from "../utils/userContext"
-
+ 
 const Footer = () => {
-
-  // const {user} = useContext(UserContext)
-
+ 
   return(
   
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -69,11 +66,4 @@ const Footer = () => {
 
 export default Footer;
 
-
-{/*
-
- <p className="sm:text-[30px] text-[25px]  animate-bounce p-3 mt-5 sm:mt-10 text-sm  font-medium  font-poppins  textorang sm:font-bold"> Built by  {user.name}</p>
-        <span className="sm:text-[20px] text-[15px]  animate-bounce p-3 mt-5 sm:mt-10 text-sm  font-medium  font-poppins   text-slate-400  sm:font-bold">{user.email}</span>
-
-
-*/}
+ 
