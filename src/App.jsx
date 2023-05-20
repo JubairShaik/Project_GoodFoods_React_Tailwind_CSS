@@ -4,7 +4,6 @@ import { Billing, Bussiness,ControlledCarousel,Header,CardDeal, Clients, CTA, Fo
 import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import Contactus from './components/Contactus';
 import {useContext,useState } from "react";
-import UserContext  from "./utils/userContext"
 import {Provider} from "react-redux";
 import store from "./utils/store";
 import Cartpage from './components/Cartpage';
