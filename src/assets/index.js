@@ -27,7 +27,7 @@ import burgur from "./burgur.png";
 import lemon from "./lemon.png";
 import gfoods from "./gfoods.jpeg";
 import chocolate from "./chocolate.png";
-import pantu  from "./pantu.jpg";
+import pantu  from "./Pantu.jpg";
 import charan  from "./charan.jpg";
 import loveboy from "./loveboy.jpg";
 import cake from "./cake.png";
