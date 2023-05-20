@@ -1,0 +1,175 @@
+Why 2 Libraies - ?
+
+
+
+npm i @reduxjs/toolkit and  (npm i react-redux)
+What iS the Job Of Redux ?
+=> redux Main Job Is To Manage The Store and Maintains It...
+
+RTK = Redux toolkit 
+configureStore will come from  @reduxjs/toolkit
+
+import {configureStore} @reduxjs/toolkit
+
+we Will Need a <Provider/> (Like A Supplier:)
+
+ We Can Provide Store to either Entire app OR Some Particular Components
+
+ import {Provider} from "react-redux"
+
+
+createSlice=>
+
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const cartSlice = createSlice({
+    name:"cart",
+    initialState:{
+        items:[],
+    }
+})
+
+
+initialState === state
+
+
+we Will Modify The Cart Using Reducer Function 
+
+Reducers Will be Called On Dispach Of An Action 
+
+#Reducer is Also a Function
+
+const cartSlice = createSlice({
+    name:"cart",
+    initialState:{
+        items:[],
+    },
+    reducers:{
+        addItem:()=>{
+            
+        }
+    }
+})
+
+cartSlice Will Need a name...
+Then An initialState..then Some Reducers
+reducers Will Contain Some Mapping Of Actions and a reducer function 
+
+...
+How We Will Modify The Store is ..
+the Reducer Function takes in two Things (state,action)
+---------------------------------------
+const cartSlice = createSlice({
+    name:"cart",
+    initialState:{
+        items:[],
+    },
+    reducers:{
+        addItem: (state,action) => {
+
+        }
+    }
+})
+{/*-------------------------------------------*/}
+
+intitial State IS Empty 
+and (Action) is the New Data Coming In ... (from UI)
+
+  addItem: (state, action) => {
+  |     state.items.push(action.payload);
+  |
+  }
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const cartSlice = createSlice({
+    name:"cart",
+    initialState:{
+        items:["Apples","Bananana"],
+    },
+    reducers:{
+        
+        addItem : (state, action) => {
+            state.items.push(action.payload);
+        },
+        removeItem:(state,action) =>{
+            state.items.pop();
+             
+        },
+        clearCart : (state,action) => {
+            state.items = []
+        },
+    },
+});
+
+export default cartSlice.reducer ;
+
+
+{-------------------Behind The Scenes------------------}
+
+import { createSlice } from "@reduxjs/toolkit";
+
+const cartSlice = createSlice({
+    name:"cart",
+    initialState:{
+        items:["Apples","Bananana"],
+    },
+    reducers:{  
+        addItem : (state, action) => {
+            state.items.push(action.payload);
+        },
+        removeItem:(state,action) =>{
+            state.items.pop();
+             
+        },
+        clearCart : (state,action) => {
+            state.items = []
+        },
+    },
+});
+
+export const { addItem , removeItem , clearCart } = cartSlice.actions ;
+export default cartSlice.reducer ;
+
+{**********
+cartSlice ={
+    actions:{
+        addItem,
+        removeItem,
+    }
+    reducer:reducers
+}
+***********}
+
+
+
+import {configureStore} from "@reduxjs/toolkit" ;
+import cartSlice from "./cartSlice";
+
+const store = configureStore({
+
+    reducer:{
+        cart:cartSlice,
+    }
+
+});
+
+export default store
+
+
+The Name Of the Object Will Be "reducer" #OnlyOne 
+  reducer:{
+        cart:cartSlice,
+    }
+    
+    #onerootreducer
+    :)
+
+
+
+
+
+import { userSelector } from "react-redux";
+
+the Job of userSelector is to gives you Access to Store 
