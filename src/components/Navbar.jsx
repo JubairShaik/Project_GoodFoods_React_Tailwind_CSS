@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import UserContext  from "../utils/userContext"
+// import UserContext  from "../utils/userContext"
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
 // import { useAuth0 } from "@auth0/auth0-react";
