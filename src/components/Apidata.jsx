@@ -1,6 +1,6 @@
 import React,{useState,useEffect,useContext} from 'react';
 import Card from './Card';
-import {mainId,FoodList,swiggy_api_URL} from './constants';
+import {mainId, swiggy_api_URL} from './constants';
 import Shimmer from './Shimmer';
 import { Link  } from "react-router-dom";
 import UserContext  from "../utils/userContext"
@@ -37,12 +37,12 @@ const Apidata = () => {
       const json = await data.json();
       setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
       setfilterdRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+      console.log(data)
       }
       catch (error) {
         console.log(error);
       }
       
-
       // console.log(json); 
     }
       <div>

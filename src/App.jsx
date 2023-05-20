@@ -17,11 +17,7 @@ import SignUp from './components/SignUp';
    
  const App = () => {
   
-   const [user, setUser] = useState({
-        name:"Have a Nice Day",
-        email:"GoodFoods@gmail.com",
-    });
-
+ 
 
 
   return(
@@ -29,12 +25,7 @@ import SignUp from './components/SignUp';
 
 
     <Provider store={store}>
-      <UserContext.Provider
-       value={{
-        user:user,
-        setUser:setUser,
-      }} 
-      >
+       
            <div className="bg-primary md:px-[3rem]  w-full overflow-hidden"> 
               <div className={`${styles.paddingX} ${styles.flexCenter}`}>
                 <div  className={`${styles.boxWidth} `}>
@@ -72,7 +63,7 @@ import SignUp from './components/SignUp';
               </div>
           
          </div>
-         </UserContext.Provider>
+         
     </Provider>
      );
 
