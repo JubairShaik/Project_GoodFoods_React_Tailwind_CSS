@@ -57,12 +57,12 @@ import Navbar from './Navbar';
 
          
     }
-   
+  return restaurants.length === 0 ? (<Shimmer2/>):(
 
  <>
 
  
-<section className={``}>
+ <section className={``}>
 <div className="sm:px-[10rem]   fixed w-full bg-gray-800 px-[.3rem]">
 
 <Navbar />
@@ -115,9 +115,9 @@ import Navbar from './Navbar';
      </div>
     </div>
     </li>
-    
+    )
+ }
 </ul>
-
    </div>
     
    </div>
@@ -143,4 +143,23 @@ import Navbar from './Navbar';
 
 export default RestaurantDetail;
 
-  
+ 
+
+{/*
+ <div>
+     <h1>Menu Items</h1>
+     <ul>{
+         Object.values(restaurants.menu.items).map((item)=><li key={item.id}>{item.name}</li>)
+     
+    
+    }</ul>
+      
+     </div>
+  const handleRemoveItem = ()=>{
+        dispatch( removeItem([]))
+    }
+
+
+     
+ 
+*/}
