@@ -9,6 +9,7 @@ import store from "./utils/store";
 import Cartpage from './components/Cartpage';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Body from './components/Body';
 
  
 
@@ -44,7 +45,7 @@ import SignUp from './components/SignUp';
                 <Header/>
              
                 <Stats />
-                <Apidata/>
+                <Body/> 
     
                 <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient"/>
       

@@ -19,12 +19,14 @@ import CartBag  from "./CartBag";
 import ControlledCarousel  from "./ControlledCarousel";
 import RestaurantDetail  from "./RestaurantDetail";
 import Underconstruction  from "./Underconstruction";
+import Body  from "./Body";
  
  
  
 export {
   
   Navbar,
+  Body,
   ControlledCarousel,
   Aboutus,
   Header,
