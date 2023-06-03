@@ -12,18 +12,23 @@ const Hero = () => {
   return(
   
     <section id="home"
+   
      className={`flex lg:flex-row flex-col sm:mt-10 mt-6
      `}>
   {/* -------LeftSidePArt------------ */}
-      <div className={`flex-4 ${styles.flexStart}
+    <div className={`flex-4 ${styles.flexStart}
       flex-col xl:px-0 sm:px-16 px-6 `}>
 
  
-        <div className="flex flex-row  items-center py-[6px] mb-2
+        <div 
+      
+        className="flex flex-row  items-center py-[6px] mb-2
         px-4 bg-discount-gradient rounded-[10px] space-x-4 ">
 
           <img src={discount} alt=""
-          className="w-[34px] h-[34px]" />
+          className="w-[34px] h-[34px]" 
+        
+          />
           
           <p className={`${styles.paragraph} ml-2`}>
 
@@ -34,13 +39,13 @@ const Hero = () => {
 
         </div>
 
-        <div className="flex w-full flex-row 
+    <div className="flex w-full flex-row 
         justify-between items-center">
-          <h1 className= "flex-1 font-poppins
+           <h1 className= "flex-1 font-poppins
            font-semibold ss:leading-[90px] leading-[75px]
             text-white text-[52px] ss:text-[72px]">
                Welcome to <br className="sm:block hidden"/>{" "}
-          <span className="textorang">BrandNew</span>  {" "}            
+            <span className="textorang">BrandNew</span>  {" "}            
             </h1>
             <div className="ss:flex hidden md:mr-4 mr-0">
 
@@ -50,7 +55,11 @@ const Hero = () => {
 
         </div>
 
-        <h1 className= " font-semibold w-full
+        <div
+        data-aos="fade-down" data-aos-duration="500" data-aos-delay="600"
+
+        >
+             <h1 className= " font-semibold w-full
             ss:leading-[100px] leading-[75px]
             text-white text-[42px] font-poppins ss:text-[70px]">
               Restaurant
@@ -64,6 +73,7 @@ const Hero = () => {
         text-slate-500 my-5 ">Always Available.......</h3>
 
 
+        </div>
       </div>
 
 
@@ -85,7 +95,9 @@ const Hero = () => {
    {/* ----------RightSidePart-------------*/}
 
    <div className={` flex-1 ${styles.center} md:my-0 my-12  relative`}>
-    <img src={burgur} alt="billing"  className="w-[100%] h-[100%] z-[5]
+    <img 
+    
+    src={burgur} alt="billing"  className="w-[100%] h-[100%] z-[5]
     relative  " />
     <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient"/>
     <div className="absolute z-[1] w-[80%] h-[65%] rounded-full bottom-40 white__gradient"/>

@@ -16,9 +16,7 @@ const CTA = () => (
 
             <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
                      We Serve The Best Food In The WholeTown .....
-          
             </p>
-
         </div>
 
 

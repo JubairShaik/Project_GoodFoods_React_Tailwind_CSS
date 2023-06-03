@@ -1,98 +1,92 @@
 import { useState } from "react";
  
 
+
+
+
 const title = () => {
   const [selectedType, setSelectedType] = useState("");
   const exploreData = [
     {
-      title: "Popular cuisines near me",
-      list: [
-        "Bakery food near me",
-        "Beverages food near me",
-        "Biryani food near me",
-        "Burger food near me",
-        "Chinese food near me",
-        "Chinese food near me",
-        "Desserts food near me",
-        "Ice Cream food near me",
-        "Mithai food near me",
-        "Momos food near me",
-        "Mughlai food near me",
-        "North Indian food near me",
-        "Pizza food near me",
-        "Sandwich food near me",
-        "Shake food near me",
-        "Sichuan food near me",
-        "South Indian food near me",
-        "Street food near me",
-        "Tea food near me",
-      ],
+      id:0,
+      question: "Do you offer vegetarian options?",
+      answer:"Yes, we have a variety of vegetarian dishes available on our menu.",
       type: "cuisines",
     },
     {
-      title: "Popular restaurant types near me",
-      list: [
-        "Bakeries near me",
-        "Bars near me",
-        "Beverage Shops near me",
-        "Bhojanalya near me",
-        "Cafés near me",
-        "Casual Dining near me",
-        "Clubs near me",
-        "Cocktail Bars near me",
-        "Dessert Parlors near me",
-        "Dhabas near me",
-        "Fine Dining near me",
-        "Food Courts near me",
-        "Food Trucks near me",
-        "Kiosks near me",
-        "Lounges near me",
-        "Paan Shop near me",
-        "Pubs near me",
-        "Quick Bites near me",
-        "Sweet Shops near me",
-      ],
-      type: "restaurant",
+      id: 1,
+      question: "Do you offer takeout or delivery services?",
+      answer: "Yes, we offer both takeout and delivery services. You can place your order online or by calling our restaurant.",
+      type: "cuisines",
+
     },
     {
-      title: "Top Restaurant Chains",
-      list: ["Domino's", "KFC", "McDonald's", "Pizza Hut", "WOW! Momo"],
-      type: "restaurantchain",
+      id: 2,
+      question: "What are your operating hours?",
+      type: "cuisines",
+      answer: "We are open from [opening time] to [closing time] every day of the week.",
+    },
+    {
+      id: 3,      type: "cuisines",
+
+      question: "Do you have a kids' menu?",
+      answer: "Yes, we have a dedicated kids' menu with a variety of options suitable for children.",
+    },
+    {
+      id: 4,
+      type: " reqss",
+
+      question: "Can I make special dietary requests?",
+      answer: "Absolutely! We accommodate special dietary requests to the best of our abilities. Please inform our staff about your requirements when placing your order.",
+    },
+    {
+      id: 5,
+      type: "credit",
+      question: "Do you accept credit cards?",
+      answer: "Yes, we accept major credit cards for payment.",
     },
   ];
   return (
     <>
-      <div className="footer-container  ">
-        <h1 className="footer-header">Explore options near me</h1>
-        <div className="footer-accordian-container">
-          {exploreData.map((data, index) => {
-            return (
-              <div className="footer-accordian" key={index}>
-                <div
-                  className="footer-listitem-header"
-                  onClick={() =>
-                    selectedType === data.type
-                      ? setSelectedType("")
-                      : setSelectedType(data.type)
-                  }
-                >
-                  <h2 className="footer-listitem-title">{data.title}</h2>
-                  {selectedType === data.type ? "a" : "b"}
-                </div>
 
-                {selectedType === data.type && (
-                  <div className="footer-listitem-container">
-                    {data.list.map((listItem, index) => (
-                      <span className="footer-listitem" key={index}>{listItem}</span>
-                    ))}
-                  </div>
-                )}
+    <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
+    <div  className="  ">
+    <h1 className="text-[3rem] font-bold font-poppins text-orange-500 ">Explore options near me</h1>
+    <div className="footer-accordian-container">
+      {exploreData.map((data, index) => {
+        return (
+          <div className="footer-accordian" key={index}>
+            <div
+              className="footer-listitem-header"
+              onClick={() =>
+                selectedType === data.type
+                  ? setSelectedType("")
+                  : setSelectedType(data.type)
+              }
+            >
+              <h2 className="text-[1.5rem] font-bold font-poppins text-orange-800">{data.question}</h2>
+              {selectedType === data.type ? 
+                <div className="text-orange-600 text-[1.7rem] font-bold ">x</div>
+                : <div className="text-orange-600 text-[1.7rem]  font-bold ">+</div>
+              }
+            </div>
+
+            {selectedType === data.type && (
+              <div className="footer-listitem-container">
+
+                  <span className="footer-listitem" key={index}>{data.answer}</span>
+               
               </div>
-            );
-          })}
-        </div>
-        <p className="created-by-text">Created by @<a href="https://www.linkedin.com/in/mansi-jain06?original_referer=" target="_blank">MansiJain</a></p>
-      </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+    
+  </div>
+    
+   </div>
+      
 
     </>
   );

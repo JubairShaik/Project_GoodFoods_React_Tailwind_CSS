@@ -9,8 +9,6 @@ import BodyCard from './BodyCard';
 
 function Body() {
 
-
-  
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -73,8 +71,13 @@ function Body() {
         }
       /> */}
 
+
+     
+
       <div
-        className=" sm:flex flex-wrap m-0 p-0 justify-center   "
+    
+        className=" items-center justify-center flex-start 
+         flex-wrap p-5 sm:p-10 flex  gap-8  sm:gap-10 rounded-lg shadow-pink  "
         data-testid="res-list"
       >
         {filteredRestaurants.map((restaurant) => {
@@ -84,7 +87,12 @@ function Body() {
               key={restaurant.data.id}
               className="res-cards "
             >
-              <BodyCard {...restaurant.data} />
+            <div
+            data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
+            >
+            
+            <BodyCard {...restaurant.data} />
+            </div>
             </Link>
           );
         })}
