@@ -33,13 +33,15 @@ function Body() {
   return ALL_RESTAURANTS_LIST?.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="flex flex-col">
-      <div className="p-4 text-center mt-24">
+    <div  id="body"  className="flex  flex-col">
+      <div className=" p-1 my-8 flex justify-center items-center text-center mt-4 sm:mt-14">
         <input
           data-testid="search-input"
           type="text"
-          className="mx-3 p-2 px-2 w-96  border border-gray-300 rounded-md focus:outline-none "
-          placeholder="Search"
+          className=" mx-3 p-2 px-2 w-[100%] sm:w-[50%]  border
+           border-gray-300 rounded-md
+            focus:outline-none "
+          placeholder="Search Your item"
           value={searchText}
           onChange={(e) => {
             //e.target.value is whatever i write
@@ -60,19 +62,6 @@ function Body() {
           Search
         </button>
       </div>
-
-      {/* <input
-        className="border"
-        onChange={(e) =>
-          setUser({
-            name: e.target.value,
-            email: "dummy@gmail.com",
-          })
-        }
-      /> */}
-
-
-     
 
       <div
     

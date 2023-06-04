@@ -1,9 +1,5 @@
 import { useState } from "react";
  
-
-
-
-
 const title = () => {
   const [selectedType, setSelectedType] = useState("");
   const exploreData = [
@@ -17,17 +13,17 @@ const title = () => {
       id: 1,
       question: "Do you offer takeout or delivery services?",
       answer: "Yes, we offer both takeout and delivery services. You can place your order online or by calling our restaurant.",
-      type: "cuisines",
+      type: "deliverys",
 
     },
     {
       id: 2,
       question: "What are your operating hours?",
-      type: "cuisines",
+      type: "hours",
       answer: "We are open from [opening time] to [closing time] every day of the week.",
     },
     {
-      id: 3,      type: "cuisines",
+      id: 3,      type: "menu",
 
       question: "Do you have a kids' menu?",
       answer: "Yes, we have a dedicated kids' menu with a variety of options suitable for children.",
@@ -50,37 +46,45 @@ const title = () => {
     <>
 
     <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
-    <div  className="  ">
-    <h1 className="text-[3rem] font-bold font-poppins text-orange-500 ">Explore options near me</h1>
-    <div className="footer-accordian-container">
+    <div  className=" sm:mt-[6rem] sm:mx-[4rem] ">
+    <h1 className="sm:text-[2.6rem] text-[1.4rem] font-bold font-poppins text-center  text-slate-200 ">Frequently <span className="text-orange-500">Asked </span> Questions</h1>
+
+
+    <div className="footer-accordian-container my-10">
       {exploreData.map((data, index) => {
         return (
-          <div className="footer-accordian" key={index}>
+          <div className="footer-accordian border-slate-500  border-[90%] border-b-[1px] " key={index}>
             <div
-              className="footer-listitem-header"
+              className=" flex items-center justify-between bg-transparent"
               onClick={() =>
                 selectedType === data.type
                   ? setSelectedType("")
                   : setSelectedType(data.type)
               }
             >
-              <h2 className="text-[1.5rem] font-bold font-poppins text-orange-800">{data.question}</h2>
+              <h2 className=" text-[1.1rem] sm:text-[1.5rem] font-bold font-poppins text-slate-300">{data.question}</h2>
+
+
+
               {selectedType === data.type ? 
-                <div className="text-orange-600 text-[1.7rem] font-bold ">x</div>
-                : <div className="text-orange-600 text-[1.7rem]  font-bold ">+</div>
+                <div className="text-slate-500 text-[1.7rem] font-bold ">x</div>
+                : <div className="text-slate-500 text-[1.7rem]  font-bold ">+</div>
               }
-            </div>
+             </div>
 
-            {selectedType === data.type && (
-              <div className="footer-listitem-container">
-
-                  <span className="footer-listitem" key={index}>{data.answer}</span>
-               
+             <div
+             className={`overflow-hidden   transition-all duration-500 ${
+               selectedType === data.type ? "max-h-[27rem]  mt-3" : "max-h-0"
+             }`}
+             >
+             <span className=" text-[1rem] sm:text-[1.3rem]  opacity-90 text-slate-400 font-poppins">{data.answer}</span>
+           </div>
+             
               </div>
-            )}
-          </div>
-        );
-      })}
+             
+              );
+            })}
+         
     </div>
     
   </div>
@@ -93,3 +97,8 @@ const title = () => {
 };
 
 export default title;
+
+
+
+
+ 

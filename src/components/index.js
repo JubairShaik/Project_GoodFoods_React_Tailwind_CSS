@@ -12,7 +12,7 @@ import Hero from "./Hero";
 // import title from "./title";
 import Apidata from "./Apidata";
 import Aboutus  from "./Aboutus";
-import Gallery  from "./Gallery";
+import QnA  from "./QnA";
 import Error  from "./Error";
 import Contactus  from "./Contactus";
 import CartBag  from "./CartBag";
@@ -20,6 +20,7 @@ import ControlledCarousel  from "./ControlledCarousel";
 import RestaurantDetail  from "./RestaurantDetail";
 import Underconstruction  from "./Underconstruction";
 import Body  from "./Body";
+// import Body  from "./Body";
  
  
  
@@ -45,5 +46,5 @@ export {
   Footer,
   Testimonials,
   Hero,
-  Gallery,
+  QnA,
 };

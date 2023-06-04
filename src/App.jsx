@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from './style';
 import { Billing, Bussiness,ControlledCarousel,Header,CardDeal, Clients, CTA, Footer, Navbar, Stats,
-   Testimonials, Error, Hero ,Underconstruction,Gallery,RestaurantDetail, Apidata, Aboutus } from "./components";
+   Testimonials, Error, Hero ,Underconstruction,QnA,RestaurantDetail, Apidata, Aboutus } from "./components";
 import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
 import Contactus from './components/Contactus';
 import {useContext,useState } from "react";
@@ -46,7 +46,6 @@ import AOS from "aos";
                 <div
                 data-aos="fade-down" data-aos-duration="800" data-aos-delay="800"
                 >
-                
                 <Navbar/>
                 </div>
                   </div>
@@ -56,16 +55,14 @@ import AOS from "aos";
                 <div
                 className={`${styles.boxWidth} `}>
                   <Hero/>
-                  <Outlet/>
+                   <Outlet/>
                 </div>
               </div>
+
+
               <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
                 <div className={`${styles.boxWidth}`}>
-                 
-               <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="600">
-                <Header/>
-               </div>
-             
+                
 
                <div data-aos="fade-down" data-aos-duration="400" data-aos-delay="300">
                 <Stats />
@@ -83,11 +80,12 @@ import AOS from "aos";
 
                 
                <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="500">
-               <Gallery/>
+               <QnA/>
                </div>
+
                
-                <Billing/>
-                <Bussiness/>
+            
+    
                 <CardDeal />
                 <Testimonials />
                 <Clients />
@@ -95,10 +93,6 @@ import AOS from "aos";
                  <CTA />
                </div>
 
-                
-               
-                
-                    
                <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="900">
                 <Footer />
                </div>
@@ -123,12 +117,18 @@ export const appRouter = createBrowserRouter([
     path: "/",
     element:<App/>,
     errorElement:<Error/>,
-     
   },
+  
+ 
   
   {
     path:"/Aboutus",
     element:<Aboutus/>,
+    errorElement:<Error/>
+  },
+  {
+    path:"/billing",
+    element:<Billing/>,
     errorElement:<Error/>
   },
 

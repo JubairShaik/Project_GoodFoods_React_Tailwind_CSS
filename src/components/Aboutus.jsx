@@ -1,9 +1,12 @@
 import React,{useState} from 'react'
  
 import {honey,cake} from '../assets'
+import Billing from './Billing';
+import Bussiness from './Bussiness';
+import Navbar from './Navbar';
 
 export const aboutusdata  = " Welcome to our restaurant where we bring you the best dining experience in town. Our restaurant GoodFoods is a foodies paradise that specializes in serving delicious food made from the freshest and finest ingredients.At our restaurant, we pride ourselves on our passion for food, impeccable service, and warm hospitality Our team of expert chefs has crafted a menu that features a wide variety of dishes from different cuisines, ensuring that there is something for everyone. Whether you're looking for a quick bite or a sumptuous meal, we have got you covered. That's why we have created a warm and welcoming ambiance that makes our guests feel right at home.Our staff is friendly and always ready to assist you in making your dining experience a memorable one.We are committed to using only the highest quality ingredients in our dishes, and we work with local farmers and suppliers to ensure that our food is always fresh and delicious."
-
+//  Billing Bussiness
 // child Component()
 const Section = ({title,desc,isVisible,setIsVisible}) => {
   return(
@@ -44,9 +47,18 @@ const Aboutus = () => {
 
   return (
 <>
+
+ 
+
     <div className=" bg-primary  px-[2rem] h-full pb-[10rem] sm:px-[6rem]   ">
     <div  className="">
-    <h1 className="textorang font-bold text-[2rem] sm:text-[5rem] text-center font-poppins">Instamart</h1>
+    <Navbar/>
+ 
+    
+    <Bussiness/>
+    <Billing/>
+
+
     <div className="flex flex-wrap-reverse  mt-[1rem]  justify-around items-center">
     <h2 className="textorang font-bold text-[2rem] sm:text-[6rem] sm:leading-[100px] leading-[50px] font-poppins  z-10" >Know <br className=" sm:flex hidden"/> About Us</h2>
     <img className=" w-full sm:w-[40%]  " src={cake} alt="" />

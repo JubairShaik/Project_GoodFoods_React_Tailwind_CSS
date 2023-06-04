@@ -13,13 +13,16 @@ const Hero = () => {
   
     <section id="home"
    
-     className={`flex lg:flex-row flex-col sm:mt-10 mt-6
+     className={`flex lg:flex-row flex-col  mt-6 sm:mt-10
      `}>
   {/* -------LeftSidePArt------------ */}
     <div className={`flex-4 ${styles.flexStart}
       flex-col xl:px-0 sm:px-16 px-6 `}>
 
- 
+      <div
+      data-aos="fade-down" data-aos-duration="900" data-aos-delay="900"
+
+      >
         <div 
       
         className="flex flex-row  items-center py-[6px] mb-2
@@ -32,61 +35,66 @@ const Hero = () => {
           
           <p className={`${styles.paragraph} ml-2`}>
 
-          <span className="text-white mr-2">70%</span>Discount {" "}
+          <span className="text-white mr-2">50%</span>off {" "}
           
           <span className="text-white"> On Your </span> 1st Delivery
            </p>
 
         </div>
+        </div>
 
-    <div className="flex w-full flex-row 
-        justify-between items-center">
+        <div
+        data-aos="fade-up" data-aos-duration="900" data-aos-delay="900"
+
+        >
+
+         <div className="flex w-full mt-5 flex-row 
+            justify-between gap-10 items-center">
            <h1 className= "flex-1 font-poppins
-           font-semibold ss:leading-[90px] leading-[75px]
+             font-semibold ss:leading-[90px] leading-[65px]
             text-white text-[52px] ss:text-[72px]">
-               Welcome to <br className="sm:block hidden"/>{" "}
-            <span className="textorang">BrandNew</span>  {" "}            
+            DeliciousEats<br className="sm:block hidden"/>{" "}
+            <span className="textorang"> Delivered</span>  {" "}            
             </h1>
+
+
             <div className="ss:flex hidden md:mr-4 mr-0">
 
-            <GetStarted/>
+           <div  
+           data-aos="zoom-in" data-aos-duration="950" data-aos-delay="950"
+           >
+           <GetStarted/>
+           </div>
 
             </div>
 
         </div>
-
-        <div
-        data-aos="fade-down" data-aos-duration="500" data-aos-delay="600"
-
-        >
              <h1 className= " font-semibold w-full
             ss:leading-[100px] leading-[75px]
             text-white text-[42px] font-poppins ss:text-[70px]">
-              Restaurant
+             with Love
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
-        </p>
-        <h3 id="apidata" className="md:text-[3rem] textorang font-bold font-poppins text2 text-[1.6rem]
-        text-slate-500 my-5 ">Always Available.......</h3>
 
 
         </div>
+
+
+        <div
+        data-aos="fade-up" data-aos-duration="900" data-aos-delay="900"
+
+        >
+        <p className={`${styles.paragraph} text-justify max-w-[600px] mt-5`}>
+        Introducing GoodFoods, the ultimate destination for food
+         lovers seeking delicious meals conveniently delivered to 
+         their doorstep. With an extensive range of mouthwatering dishes 
+         sourced from top local restaurants, prepared with utmost passion
+          and delivered with utmost care, we bring you a
+         diverse culinary experience like no other.
+        </p>
+   
+      
+        </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -94,13 +102,13 @@ const Hero = () => {
       
    {/* ----------RightSidePart-------------*/}
 
-   <div className={` flex-1 ${styles.center} md:my-0 my-12  relative`}>
+   <div className={` flex-1 ${styles.center}  md:my-0 my-12  relative`}>
+    <div   className="z-[100px]" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="800" >
     <img 
-    
-    src={burgur} alt="billing"  className="w-[100%] h-[100%] z-[5]
+    src={burgur} alt="billing"  className="w-[100%] h-[100%]  
     relative  " />
+    </div>
     <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient"/>
-    <div className="absolute z-[1] w-[80%] h-[65%] rounded-full bottom-40 white__gradient"/>
     <div className="absolute z-[2] w-[50%] h-[85%] bottom-[70px] right-[100px]  orange"/>
      
    </div>

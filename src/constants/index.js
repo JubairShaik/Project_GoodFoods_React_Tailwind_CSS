@@ -35,15 +35,15 @@ import { people01, people02 ,loveboy,charan, people03, facebook, instagram, link
 
 export const navLinks = [
   {
-    id: "home",
+    id: "/",
     title: "Home",
   },
   {
-    id:"apidata",
+    id:"aboutus",
     title:"Apidata"
   },
   {
-    id: "features",
+    id: "body",
     title: "Features",
   },
   {
@@ -127,8 +127,8 @@ export const stats = [
   {
     id: "stats-3",
     key:'sebrtt56',
-    title: "Invester Realtions",
-    value: "$230M+",
+    title: "Investers Funding",
+    value: "230M",
   },
 ];
 
