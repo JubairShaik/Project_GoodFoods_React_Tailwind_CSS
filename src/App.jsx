@@ -38,7 +38,7 @@ import AOS from "aos";
 
     <Provider store={store}>
        
-           <div className="bg-primary md:px-[3rem]  w-full overflow-hidden"> 
+           <div className="bg-primary md:px-[2.7rem]  w-full overflow-hidden"> 
               <div className={`${styles.paddingX} ${styles.flexCenter}`}>
                 <div
                 
@@ -78,20 +78,25 @@ import AOS from "aos";
                 <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient"/>
       
 
-                
-               <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="500">
-               <QnA/>
-               </div>
-
-               
+            
             
     
                 <CardDeal />
                 <Testimonials />
-                <Clients />
+
+                
+                <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="500">
+                <QnA/>
+                </div>
+             
                 <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="500">
                  <CTA />
                </div>
+
+                   
+             
+
+               
 
                <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="900">
                 <Footer />

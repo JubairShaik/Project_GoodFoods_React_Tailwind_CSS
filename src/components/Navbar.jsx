@@ -29,7 +29,7 @@ const Navbar = () => {
      justify-between items-center  flex   py-6 font-poppins navbar">
 
      <Link to= "/" >
-       <span className="title text-[1.1rem] font-bold text-orange-500 sm:text-[2rem]">Good<span className="text-yellow-500">Foods</span></span>
+       <span className="title text-[1.6rem] font-bold text-orange-500 sm:text-[2rem]">Good<span className="text-yellow-500">Foods</span></span>
      </Link>
   
       <div className="flex  items-center gap-5" >

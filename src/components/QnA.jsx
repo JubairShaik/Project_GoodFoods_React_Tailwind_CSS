@@ -46,7 +46,7 @@ const title = () => {
     <>
 
     <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="600">
-    <div  className=" sm:mt-[6rem] sm:mx-[4rem] ">
+    <div  className=" sm:mt-[4rem] sm:mx-[4rem] ">
     <h1 className="sm:text-[2.6rem] text-[1.4rem] font-bold font-poppins text-center  text-slate-200 ">Frequently <span className="text-orange-500">Asked </span> Questions</h1>
 
 

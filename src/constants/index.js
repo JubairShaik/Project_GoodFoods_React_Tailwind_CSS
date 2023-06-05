@@ -89,24 +89,24 @@ export const feedback = [
     content:
    
     "I had the pleasure of dining at GoodFoods last nigh , the ambiance was just perfect. and it was an unforgettable experience. ",
-    name: "Myaanojj",
-    title: "Coder &  PinkLover",
+    name: "Manoj",
+    title: "Python Developer",
     img: loveboy,
   },
   {
     id: "feedback-2",
     content:
       "The food was exceptional,the service was outstanding I would highly recommend this restaurant to anyone looking for a fine dining experience.",
-    name: "Car-Tikk",
-    title: "CR & Panthuluu",
+    name:  "Kartikeya",
+    title: "ML Engineer",
     img:charan,
   },
   {
     id: "feedback-3",
     content:
       "The quality of the food and service is consistently top-notch, and I always leave feeling satisfied and happy.",
-    name: "genuis  Charan",
-    title: "Playboy and MathsTopper",
+    name: "Charan Teja",
+    title: "Senior Professior",
     img: charan,
   },
 ];

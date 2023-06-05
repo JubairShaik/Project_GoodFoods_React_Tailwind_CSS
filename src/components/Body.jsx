@@ -51,7 +51,7 @@ function Body() {
 
         <button
           data-testid="search-btn"
-          className=" p-2 px-4 bg-gray-700 text-white rounded-md hover:shadow-md max-sm:hidden"
+          className=" p-2   text-white rounded-md hover:shadow-md max-sm:hidden"
           onClick={() => {
             //need to filter the data
             const data = filterData(searchText, allRestaurants);
@@ -66,7 +66,7 @@ function Body() {
       <div
     
         className=" items-center justify-center flex-start 
-         flex-wrap p-5 sm:p-10 flex  gap-8  sm:gap-10 rounded-lg shadow-pink  "
+         flex-wrap  sm:p-10 flex  gap-8  sm:gap-12 rounded-lg shadow-pink  "
         data-testid="res-list"
       >
         {filteredRestaurants.map((restaurant) => {

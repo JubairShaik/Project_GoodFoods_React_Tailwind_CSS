@@ -13,7 +13,7 @@ const BodyCard = ({
   const firstTwoCuisines = cuisines.slice(0, 2).join(", ");
 
   return (
-    <div className="sm:w-[22rem] font-poppins w-[20rem] h-[22.4rem] transition-all cursor-pointer rounded-2xl p-1 sm:p-3 hover:shadow-orange-500 text-white  shadow-sm">
+    <div className=" max-w-[358px] font-poppins   h-auto transition-all cursor-pointer rounded-2xl p-1 sm:p-3 hover:shadow-orange-500 text-white  shadow-sm">
       <img
         className="w-full rounded-lg"
         src={!cloudinaryImageId ? NO_IMAGE_AVAILABLE : IMG_CDN_URL + cloudinaryImageId}
