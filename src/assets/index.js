@@ -31,6 +31,7 @@ import charan  from "./charan.jpg";
 import loveboy from "./loveboy.jpg";
 import cake from "./cake.png";
 import honey from "./honey.png";
+import emptycart from "./emptycart.png";
 
 
 

@@ -6,8 +6,7 @@ import Bussiness from './Bussiness';
 import Navbar from './Navbar';
 
 export const aboutusdata  = " Welcome to our restaurant where we bring you the best dining experience in town. Our restaurant GoodFoods is a foodies paradise that specializes in serving delicious food made from the freshest and finest ingredients.At our restaurant, we pride ourselves on our passion for food, impeccable service, and warm hospitality Our team of expert chefs has crafted a menu that features a wide variety of dishes from different cuisines, ensuring that there is something for everyone. Whether you're looking for a quick bite or a sumptuous meal, we have got you covered. That's why we have created a warm and welcoming ambiance that makes our guests feel right at home.Our staff is friendly and always ready to assist you in making your dining experience a memorable one.We are committed to using only the highest quality ingredients in our dishes, and we work with local farmers and suppliers to ensure that our food is always fresh and delicious."
-//  Billing Bussiness
-// child Component()
+ 
 const Section = ({title,desc,isVisible,setIsVisible}) => {
   return(
    <div className={`sm:mt-6 mt-4 bg-slate-300 p-2 sm:p-3 rounded-1xl`}>

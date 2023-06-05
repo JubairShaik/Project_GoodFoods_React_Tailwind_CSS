@@ -1,4 +1,4 @@
-import { FETCH_ALL_RESTAURANTS, FETCH_MENU_URL } from "../constants/index";
+import { FETCH_ALL_RESTAURANTS, FETCH_MENU_URL } from "../constants";
 
 export const idIndexPair = {
   425: 0,
