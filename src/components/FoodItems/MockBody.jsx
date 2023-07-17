@@ -38,14 +38,18 @@ function MockBody() {
         data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600"
         className="absolute z-[0] sm:w-[75%] h-[30%] w-[30%] sm:h-[57%] sm:left-[70rem]  left-[1rem] top-[5rem] blue__gradient"/>
 
+      
+<h1 className=" ml-3 text-yellow-500 font-poppins text-center  font-medium mt-10 sm:text-[2rem] text-[1.4rem] "> Hungry....?</h1>
 
+      <div className="p-1 my-8 flex justify-center items-center text-center mt-2 sm:mt-14">
 
-      <div className="p-1 my-8 flex justify-center items-center text-center mt-4 sm:mt-14">
         
+        
+
         <input
           data-testid="search-input"
           type="search"
-          className="mx-3 p-2 px-2 w-[100%] sm:w-[50%] border border-gray-300 rounded-md focus:outline-none"
+          className="mx-1 p-2 px-2 font-poppins  w-[100%] sm:w-[50%] border border-gray-300 rounded-md focus:outline-none"
           placeholder="Search Your item"
           value={searchText}
           onChange={(e) => {

@@ -2,8 +2,7 @@ import React from "react";
 import { Formik } from "formik"; // import Formik from formik
 import * as Yup from "yup"; // import Yup from yup
 import { useNavigate } from "react-router-dom";
-import  {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 // create a schema for validation
 const schema = Yup.object().shape({
@@ -14,9 +13,6 @@ const schema = Yup.object().shape({
     .required("Password is a required field")
     .min(8, "Password must be at least 8 characters"),
 });
-
-
-
 
 const Login = () => {
   const navigate = useNavigate();
@@ -33,7 +29,6 @@ const Login = () => {
     <>
       {/* Wrapping form inside formik tag and passing our schema to validationSchema prop */}
       <Formik
-   
         validationSchema={schema}
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
@@ -50,14 +45,19 @@ const Login = () => {
           handleSubmit,
         }) => (
           <div className="bg-primary  text-white font-poppins flex justify-center items-center h-screen ">
+       
             <div className="bg-slate-800 rounded-lg  px-3 py-10 w-[85%] sm:w-[30%] ">
+            
               {/* Passing handleSubmit parameter to html form onSubmit property */}
               <form
-              className="flex flex-col gap-1 sm:gap-2"
-              noValidate onSubmit={handleSubmit}>
-
-              <div className="flex p-2 justify-center  font-extrabold text-[2.9rem] sm:text-[3.9rem]" >Login</div>
-              {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
+                className="flex flex-col gap-1 sm:gap-2"
+                noValidate
+                onSubmit={handleSubmit}
+              >
+                <div className="flex p-2 justify-center  font-extrabold text-[2.9rem] sm:text-[3.9rem]">
+                  Login
+                </div>
+                {/* Our input html with passing formik parameters like handleChange, values, handleBlur to input properties */}
                 <input
                   type="email"
                   name="email"
@@ -65,7 +65,7 @@ const Login = () => {
                   onBlur={handleBlur}
                   value={values.email}
                   placeholder="Enter your email"
-                  className=" px-3 py-1 rounded-md w-full h-10"
+                  className=" px-3 py-1 text-black rounded-md w-full h-10"
                   id="email"
                 />
                 {/* If validation is not passed show errors */}
@@ -80,22 +80,29 @@ const Login = () => {
                   onBlur={handleBlur}
                   value={values.password}
                   placeholder="Enter your password"
-                  className=" px-3 py-1 rounded-md w-full h-10"
+                  className=" px-3 py-1 text-black rounded-md w-full h-10"
                 />
                 {/* If validation is not passed show errors */}
                 <p className="text-red-500">
                   {errors.password && touched.password && errors.password}
                 </p>
                 {/* Click on submit button to submit the form */}
-                <button type="submit" className="w-full h-10 font-bold bg-green-500 rounded-md " >Login</button>
+                <button
+                  type="submit"
+                  className="w-full h-10 font-bold bg-green-500 rounded-md "
+                >
+                  Login
+                </button>
               </form>
 
               <div className="bg-slate-800 flex mx-2 mt-5 gap-3 items-center justify-center ">
-                <h2 className="text-red-500 text-lg  sm:text-xl">Dont Have An Account ? </h2> 
-                    <Link to="/signup" >
-                    <p className="underline" >Sign Up</p>
-                    </Link>
-                </div>
+                <h2 className="text-red-500 text-lg  sm:text-xl">
+                  Dont Have An Account ?{" "}
+                </h2>
+                <Link to="/signup">
+                  <p className="underline">Sign Up</p>
+                </Link>
+              </div>
             </div>
           </div>
         )}
@@ -103,7 +110,5 @@ const Login = () => {
     </>
   );
 };
-
-
 
 export default Login;

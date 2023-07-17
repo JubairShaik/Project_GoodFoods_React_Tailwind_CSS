@@ -104,7 +104,7 @@ const Hero = () => {
     relative  " />
     </div>
     <div 
-      data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"
+      data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100"
     className="absolute z-[2] w-[66%] h-[85%] bottom-[70px] right-[100px]  orange"/>
      
     </div>

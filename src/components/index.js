@@ -7,9 +7,8 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import QnA  from "./QnA";
 import Error  from "./Error";
-import Contactus  from "./Contactus";
+ 
 import CartBag  from "./CartBag";
-import ControlledCarousel  from "./ControlledCarousel";
 import RestaurantDetail  from "./RestaurantDetail";
 import Underconstruction  from "./Underconstruction";
  
@@ -31,6 +30,12 @@ import Aboutme from './About/Aboutme';
 import Aboutus from './About/Aboutus';
 
 
+
+import Bodymenu from './Foodmenu/Bodymenu';
+
+
+Bodymenu
+
 export {
   
   Navbar,
@@ -40,12 +45,12 @@ export {
   Aboutme,
   Aboutus,
 
-  ControlledCarousel,
+  Bodymenu,
  
   CartBag,
   Underconstruction,
   RestaurantDetail,
-  Contactus,
+ 
   Billing,
   Error,
  

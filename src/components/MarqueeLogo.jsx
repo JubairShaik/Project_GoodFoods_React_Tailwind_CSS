@@ -12,27 +12,27 @@ const MarqueeLogo = () => {
     <section className="mt-[4rem]  ">
 
     <div className="flex  md:flex-row  flex-col leading-[1px] gap-6   space-y-2
-     items-center 
+    
     justify-center">
 
 
-    <div className="w-[90%] md:w-[25%] h-[.1rem] bg-slate-500 dark:bg-white"></div>
-    <div className="font-bold text-orange-500 font-poppins  text-[1.4rem] p-1 sm:p-4">In Partnership With</div>
-    <div className="w-[90%] md:w-[25%]  bg-slate-500 h-[.1rem] dark:bg-white"></div>
-
+   
+    <div className="  text-orange-500 font-poppins  text-[1.4rem] p-2 sm:p-4">In Partnership With</div>
+ 
 
     </div>
     
-    <Marquee  direction='left' gradient={false} speed={60} className="mb-14 " >
+    <Marquee  direction='left' gradient={false} speed={70} className="mb-14 " >
+
     <div className="flex  space-x-8 sm:space-x-14  items-center  ">
-      <img className="h-[3.5rem] cursor-pointer grayscale hover:grayscale-0  "  src={Swiggy} alt="" />
-      <img className="h-[7rem] cursor-pointer grayscale  hover:grayscale-0  "  src={Zomato} alt="" />
-      <img className="h-[3.5rem] cursor-pointer grayscale hover:grayscale-0  "  src={Swiggy} alt="" />
-      <img className="h-[7rem] cursor-pointer grayscale  hover:grayscale-0  "  src={Zomato} alt="" />
-      <img className="h-[3.5rem] cursor-pointer grayscale hover:grayscale-0  "  src={Swiggy} alt="" />
-      <img className="h-[7rem] cursor-pointer grayscale  hover:grayscale-0  "  src={Zomato} alt="" />
-      <img className="h-[3.5rem] cursor-pointer grayscale hover:grayscale-0  "  src={Swiggy} alt="" />
-      <img className="h-[7rem] cursor-pointer grayscale  hover:grayscale-0  "  src={Zomato} alt="" />
+      <img className="h-[3.5rem] cursor-pointer hover:grayscale grayscale-0  "  src={Swiggy} alt="" />
+      <img className="h-[7rem] cursor-pointer hover:grayscale   grayscale-0  "  src={Zomato} alt="" />
+      <img className="h-[3.5rem] cursor-pointer hover:grayscale grayscale-0  "  src={Swiggy} alt="" />
+      <img className="h-[7rem] cursor-pointer hover:grayscale  grayscale-0  "  src={Zomato} alt="" />
+      <img className="h-[3.5rem] cursor-pointer hover:grayscale grayscale-0  "  src={Swiggy} alt="" />
+      <img className="h-[7rem] cursor-pointer hover:grayscale  grayscale-0  "  src={Zomato} alt="" />
+      <img className="h-[3.5rem] cursor-pointer hover:grayscale grayscale-0  "  src={Swiggy} alt="" />
+      <img className="h-[7rem] cursor-pointer hover:grayscale  grayscale-0  "  src={Zomato} alt="" />
       
     </div>
      </Marquee>

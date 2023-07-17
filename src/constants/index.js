@@ -101,9 +101,9 @@ export const feedback = [
     id: "feedback-2",
     content:
       "The food was exceptional,the service was outstanding I would highly recommend this restaurant to anyone looking for a fine dining experience.",
-    name:  "Kartikeya",
+    name:  "Emilia",
     title: "ML Engineer",
-    img:charan,
+    img:people01,
   },
   {
     id: "feedback-3",

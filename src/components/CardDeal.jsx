@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const CardDeal = () => {
   return (
-    <section className={layout.section}>
+    <section className={`${layout.section} mt-10 md:mt-2`}>
       <div className={layout.sectionInfo}>
         <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
           <h2 className={styles.heading2}>
@@ -23,7 +23,7 @@ const CardDeal = () => {
             <button
                type="button"
                className={`py-3 mt-10 px-6 
-               bg-yellow-gradient text-[18px] font-poppins rounded-lg`}
+               bg-yellow-gradient text-[18px]  font-semibold font-poppins rounded-lg`}
             >
               Know More About us
             </button>

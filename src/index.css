@@ -426,4 +426,37 @@
   0px 26px 80px rgba(251, 211, 9, 0.23)
 ;
 }
- 
+
+
+/* Bodymenu.css */
+
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.popup-animation {
+  display: inline-block;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  animation: popupFade 1.3s ease-in-out;
+}
+
+@keyframes popupFade {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
