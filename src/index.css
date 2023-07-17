@@ -381,8 +381,49 @@
 }
 
 
+.flex__styles{
+  @apply  flex justify-center  items-center sm:flex-row flex-col
+}
 
+.flex__style{
+  @apply  flex justify-center  items-center  
+}
+  
+
+@layer utilities {
+  .bg-black-500 {
+    background-color: #000;
+  }
+}
+
+.connect__button {
+  @apply bg-black-500 flex__style   w-full font-poppins hover:bg-cyan-700 mt-5 text-white font-normal py-1 px-4 rounded-[10px] border border-blue-500 shadow-md transition duration-300 ease-in-out transform hover:scale-105;
+}
+
+/* .connect__button{
+  @apply bg-black-500  flex__style  text-20  w-full  font-poppins    hover:bg-cyan-700 mt-5 text-white font-normal py-1 px-4 rounded-[10px] border border-blue-500 shadow-md transition duration-300 ease-in-out transform hover:scale-105
+} */
 
 
 
 /* "https://img.freepik.com/free-photo/top-view-vegetable-soup-with-meat-inside-plate-grey_140725-36040.jpg?w=1060&t=st=1677590770~exp=1677591370~hmac=2d0f6975fec776387f047346427e151981830809ba0b14abf09bdaf78e7d23ee" */
+
+
+.shadow{
+  box-shadow:
+  0px 0px 2.3px -6px rgba(244, 236, 6, 0.117),
+  2.6px 5.6px 9.4px -6px rgba(253, 246, 32, 0.173),
+  12px 26px 80px -6px rgba(245, 249, 17, 0.29);
+}
+ 
+
+.shadow2 {
+  box-shadow:
+  0px 5.2px 16.6px rgba(250, 233, 0, 0.015),
+  0px 8.6px 26.7px rgba(203, 247, 9, 0.037),
+  0px 11.2px 34.6px rgba(203, 249, 0, 0.077),
+  0px 14.5px 45px rgba(248, 219, 6, 0.182),
+  0px 26px 80px rgba(251, 211, 9, 0.23)
+;
+}
+ 

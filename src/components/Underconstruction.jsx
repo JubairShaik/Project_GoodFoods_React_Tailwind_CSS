@@ -1,18 +1,21 @@
 import React from 'react'
+import {construction} from "../assets"
+
+
+
 
 const Underconstruction = () => {
+
+  
   return (
     <>
-    <div className="bg-primary  flex-col flex justify-center font-poppins items-center h-screen ">
-    <div className="absolute mb-10 z-[0] w-[50%] h-[60%]  -left-[50%] orange__gradient rounded-full "/>
-    <div className="absolute mb-10 z-[0] w-[50%] h-[60%]  -left-[10%] orange__gradient rounded-full "/>
-     <span className="text-gradient text-center text-[2rem] font-bold text-bold md:text-[2rem]">Website Under Maintance</span>
-    <p className="textorang text-[1rem] z-10 font-bold md:text-[4rem]"> We Will Be Back Soon.... </p>
-    <div className="absolute z-[0] -left-1/2 bottom-0 w-[100%] h-[50%] rounded-full blue__gradient"/>
-    <div className="absolute z-[0] -left-1/2 bottom-0 w-[100%] h-[50%] rounded-full blue__gradient"/>
-    <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient"/>
-
-    </div>
+     
+     <div 
+      
+     className="flex__style flex-col bg-primary h-screen " >
+        <img className="w-[10rem] select-none "  src={construction} alt="construction" />
+        <h2 className="text-center text-yellow-500 font-mono text-[20px] sm:text-[34px]"> Website Under Maintainance</h2>
+     </div>
     </>
 
   )

@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { close, logo, menu } from "../assets";
+import { close,  menu } from "../assets";
 import { navLinks } from "../constants";
 // import UserContext  from "../utils/userContext"
 import { useSelector } from "react-redux";

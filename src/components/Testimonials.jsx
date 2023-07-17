@@ -2,6 +2,7 @@ import React from 'react'
 import { feedback} from '../constants';
 import styles, {layout} from '../style';
 import FeedbackCard from './FeedbackCard'
+import GetStarted from './GetStarted';
 
 const Testimonials = () => {
   return (
@@ -14,18 +15,14 @@ const Testimonials = () => {
 
       <div className="w-full items-center  md:flex-row
       flex-col  mb-6 sm:mb-18 z-[1] flex justify-between " >
+
+        
         <h1 className={styles.heading2}>
         What People are
         <br className="sm:block hidden " />
         saying about us
         </h1>
-        <div className="w-full  sm:mt-0 mt-6">
-          <p className= {`${styles.paragraph} text-left
-          max-w-[450px]`}>
-         Everything you need to accept card payments
-         and grow your business anywhere on the planet.
-          </p>
-        </div>
+         
 
       </div>
 
@@ -36,7 +33,8 @@ const Testimonials = () => {
 
         ))}
       </div>
-    
+
+  
     </section>
 
      

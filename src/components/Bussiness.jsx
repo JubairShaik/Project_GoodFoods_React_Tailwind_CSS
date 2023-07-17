@@ -1,13 +1,21 @@
-import React from 'react'
-import {features} from '../constants';
-import styles,{layout} from '../style';
-import Button from './Button';
+import React from "react";
+import { features } from "../constants";
+import styles, { layout } from "../style";
+import Button from "./Button";
+
+import { girl } from "../assets";
 
 
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
+  <div
+    className={`flex flex-row p-6 rounded-[20px] ${
+      index !== features.length - 1 ? "mb-6" : "mb-0"
+    } feature-card`}
+  >
+    <div
+      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+    >
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
     <div className="flex-1 flex flex-col ml-3">
@@ -21,58 +29,40 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
- 
 const Bussiness = () => {
   return (
-
-<>
-
-<div>
-<h2 className="text-gradient text-[4rem] text-center font-poppins">Bussiness</h2>
-
-</div>
-
-    <section id="features" className={layout.section}>
-      <div className={layout.sectionInfo}>
-        <h2 className={`${styles.heading2}`}>You do the business,
-          <br className="sm:block hidden"/>
-               we’ll handle the money.
-               
+    <>
+      <div>
+        <h2 className="text-gradient text-[2.4rem] sm:text-[3.4rem] text-center font-poppins">
+         About Bussiness
         </h2>
-          <p className={`${styles.paragraph} max-w-[470px] first-letter:mt-5`}>
-             With the right credit card, you can improve
-              your financial life by building credit, earnin
-             g rewards and saving money. But with hundreds o
-              f credit cards on the market.
-          </p>
-
-          <Button/>
-
-
-
-
       </div>
 
+      <section id="features" className={layout.section}>
 
-      <div className={layout.sectionInfo}>
         
-    <div className={`${layout.sectionImg} flex-col`}>
-      {features.map((feature, index) => (
-        <FeatureCard key={features.key} {...feature}  />
-      ))}
-    </div>
-</div>
+    
+        <div className={layout.sectionInfo}>
+          <div className={`${layout.sectionImg} flex-col`}>
+            {features.map((feature, index) => (
+              <FeatureCard key={features.key} {...feature} />
+            ))}
+          </div>
+        </div>
 
+        <div className={`${layout.sectionInfo}  `}>
+          <img className=" h-full sm:h-[460px] relative "  src={girl} alt="" />
+        <div 
+      data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"
+      className="absolute z-[2] w-[66%] h-[85%] bottom-[70px] right-[100px]  orange"/>
+      </div>
+     
+  
 
-
-
-
-
-    </section>
-
+      </section>
     </>
+  );
+};
 
-  )
-}
+export default Bussiness;
 
-export default Bussiness

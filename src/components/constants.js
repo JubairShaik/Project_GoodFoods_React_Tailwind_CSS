@@ -1,3 +1,46 @@
+export const exploreData = [
+  {
+    id:0,
+    question: "Do you offer vegetarian options?",
+    answer:"Yes, we have a variety of vegetarian dishes available on our menu.",
+    type: "cuisines",
+  },
+  {
+    id: 1,
+    question: "Do you offer takeout or delivery services?",
+    answer: "Yes, we offer both takeout and delivery services. You can place your order online or by calling our restaurant.",
+    type: "deliverys",
+
+  },
+  {
+    id: 2,
+    question: "What are your operating hours?",
+    type: "hours",
+    answer: "We are open from [opening time] to [closing time] every day of the week.",
+  },
+  {
+    id: 3,      type: "menu",
+
+    question: "Do you have a kids' menu?",
+    answer: "Yes, we have a dedicated kids' menu with a variety of options suitable for children.",
+  },
+  {
+    id: 4,
+    type: " reqss",
+
+    question: "Can I make special dietary requests?",
+    answer: "Absolutely! We accommodate special dietary requests to the best of our abilities. Please inform our staff about your requirements when placing your order.",
+  },
+  {
+    id: 5,
+    type: "credit",
+    question: "Do you accept credit cards?",
+    answer: "Yes, we accept major credit cards for payment.",
+  },
+];
+
+
+
 
 export const mainId
 = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";

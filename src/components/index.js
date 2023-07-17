@@ -1,3 +1,5 @@
+ 
+
 import Navbar from "./Navbar";
 import Billing from "./Billing";
 import Header from "./Header";
@@ -11,7 +13,6 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 // import title from "./title";
 import Apidata from "./Apidata";
-import Aboutus  from "./Aboutus";
 import QnA  from "./QnA";
 import Error  from "./Error";
 import Contactus  from "./Contactus";
@@ -20,9 +21,7 @@ import ControlledCarousel  from "./ControlledCarousel";
 import RestaurantDetail  from "./RestaurantDetail";
 import Underconstruction  from "./Underconstruction";
 import Body  from "./Body";
-// import Body  from "./Body";
- 
- 
+import  Aboutus  from './About/Aboutus.jsx';
  
 export {
   
@@ -47,4 +46,5 @@ export {
   Testimonials,
   Hero,
   QnA,
+  
 };

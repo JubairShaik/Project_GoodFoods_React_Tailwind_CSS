@@ -31,7 +31,11 @@ export const NO_IMAGE_AVAILABLE =
 
 
 
-import { people01, people02 ,loveboy,charan, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02 ,loveboy,charan, people03, facebook, instagram, linkedin,
+  hamburger,
+  diet,
+  delivery,
+  twitter   } from "../assets";
 
 export const navLinks = [
   {
@@ -60,7 +64,7 @@ export const features = [
   {
     id: "feature-1",
     key:"kfgbrsebt",
-    icon: star,
+    icon: hamburger,
     title: "Fastest Food Delivery",
     content:
       "We Deliver The Fastest Food and Make Sure to reach upto your Expectations",
@@ -68,7 +72,7 @@ export const features = [
   {
     id: "feature-2",
     key:"etaebbt",
-    icon: shield,
+    icon:  diet,
     title: "100% Best Service",
     content:
       "We take proactive steps to make sure your Experince Upto The Mark",
@@ -76,7 +80,7 @@ export const features = [
   {
     id: "feature-3",
     key:"dtsydtft",
-    icon: send,
+    icon: delivery,
     title: "Pay On Delivery",
     content:
       "You Can Pay the Food Amout After We Deliver The Food At Yor Door Step.",
@@ -141,7 +145,7 @@ export const footerLinks = [
       {
         name: "Content",
         key:"hfhtrg",
-        link: "https://www.hoobank.com/content/",
+        link: "https://goodfoods.vercel.app/aboutus",
       },
       {
         name: "How it Works",
@@ -156,7 +160,7 @@ export const footerLinks = [
       {
         name: "Explore",
         key:"ztbtbrr",
-        link: "https://www.hoobank.com/explore/",
+        link: "https://goodfoods.vercel.app/aboutus",
       },
       {
         name: "Terms & Services",
@@ -210,13 +214,7 @@ export const socialMedia = [
     id: "social-media-1",
     key:"adtybrtuf",
     icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    key:"yeyetveyf",
-    icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.linkedin.com/in/imjubairahmed/",
   },
   {
     id: "social-media-3",
@@ -235,19 +233,19 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb, 
+    logo: "Hello", 
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: "Hello",
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: "Hello",
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: "Hello",
   },
 ];
 

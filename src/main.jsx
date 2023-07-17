@@ -4,30 +4,23 @@ import App from './App'
 import './index.css'
 import Error from './components/Error';
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
-import Aboutus from './components/Aboutus';
-import Apidata from './components/Apidata';
-import Contactus from './components/Contactus';
+ 
 import {appRouter} from './App' ;
 import {Provider} from "react-redux" ;
 import store from "./utils/store";
-import { Auth0Provider } from "@auth0/auth0-react";
+ 
+const handleContextMenu = (event) => {
+  event.preventDefault();
+};
 
-// const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-// const  clientId = process.env.REACT_APP_AUTH0_CLIENT_ID   ;
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Auth0Provider
-  domain="webdevmastery.us.auth0.com"
-  clientId="o021gyUaiDqq77CK4g8ITErSzh0zeFkj"
-  authorizationParams={{
-    redirect_uri: window.location.origin
-  }}
-  >
+ 
   <Provider store={store}>
   <RouterProvider router={appRouter} />
   </Provider>  
-  </Auth0Provider>
+ 
   
 );
 

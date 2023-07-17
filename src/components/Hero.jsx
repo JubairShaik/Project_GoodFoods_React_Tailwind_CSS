@@ -11,10 +11,9 @@ const Hero = () => {
 
   return(
   
-    <section id="home"
-   
-     className={`flex lg:flex-row flex-col  mt-6 sm:mt-10
-     `}>
+    <section className="flex lg:flex-row flex-col  mt-6 ">
+
+
   {/* -------LeftSidePArt------------ */}
     <div className={`flex-4 ${styles.flexStart}
       flex-col xl:px-0 sm:px-16 px-6 `}>
@@ -60,11 +59,7 @@ const Hero = () => {
 
             <div className="ss:flex hidden md:mr-4 mr-0">
 
-           <div  
-           data-aos="zoom-in" data-aos-duration="950" data-aos-delay="950"
-           >
-           <GetStarted/>
-           </div>
+         
 
             </div>
 
@@ -108,16 +103,12 @@ const Hero = () => {
     src={burgur} alt="billing"  className="w-[100%] h-[100%]  
     relative  " />
     </div>
-    <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient"/>
-    <div className="absolute z-[2] w-[50%] h-[85%] bottom-[70px] right-[100px]  orange"/>
+    <div 
+      data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"
+    className="absolute z-[2] w-[66%] h-[85%] bottom-[70px] right-[100px]  orange"/>
      
-   </div>
+    </div>
 
-   <div className={`ss:hidden ${styles.flexCenter}`  }>
-
-    <GetStarted/>
-
-   </div>
 
 
      </section>
