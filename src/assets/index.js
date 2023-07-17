@@ -33,6 +33,7 @@ import ubereats from "./ubereats.png";
 import Swiggy from "./Swiggy.png";
 import plus from "./plus.png";
 import minus from "./minus.png";
+import star from "./star.png";
 
 
 
@@ -70,6 +71,7 @@ export {
   Zomato,
   ubereats,
   Swiggy,
-  plus
+  plus,
+  star
 
 };

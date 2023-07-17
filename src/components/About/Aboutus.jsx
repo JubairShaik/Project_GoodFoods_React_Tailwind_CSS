@@ -72,16 +72,13 @@ const Aboutus = () => {
         <div className="">
           
           <Navbar />
-{/* 
-          <Aboutme/> */}
-          {/* <Billing /> */}
-          <Bussiness />
+ 
+          <Aboutme/> 
+          <Billing /> 
+      
 
 
-          <h2 className=" font-poppins font-semibold text-[2rem]"> Shaik Jubair Ahmed</h2>
-        <p className="font-poppins">
-        I Am a Frontend Developer 
-        </p>
+         
           <h3  className="md:text-[3rem]  font-bold font-poppins  text-[1.6rem] text-slate-500 my-5 "> Hello Foodiees</h3>
           
           <p className="text-cyan-500 mt-5 sm:text-[1.4rem] text-justify text-[1.25rem] font-light sm:font-medium font-poppins sm:font:semi-bold">
@@ -98,7 +95,7 @@ const Aboutus = () => {
           </p>
 
         
-
+          <Bussiness />
 
           <Footer/>
 

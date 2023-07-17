@@ -1,7 +1,7 @@
 // import React from 'react'
-import {discount ,burgur} from '../assets';
-import styles from '../style' ;
-import GetStarted from './GetStarted'
+import {discount ,burgur} from '../../assets';
+import styles from '../../style' ;
+ 
 // import UserContext  from "../utils/userContext"
 import { useContext } from "react";
  
@@ -11,7 +11,7 @@ const Hero = () => {
 
   return(
   
-    <section className="flex lg:flex-row flex-col  mt-6 ">
+    <section className="flex lg:flex-row flex-col  mt-14 md:mt-3 ">
 
 
   {/* -------LeftSidePArt------------ */}

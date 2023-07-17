@@ -1,11 +1,13 @@
+// USING THIS COMPONENT LEADS TO CORS ERROR 
+
 import React,{useState,useEffect,useContext} from 'react';
 import Card from './Card';
-import {mainId, swiggy_api_URL} from './constants';
-import Shimmer from './Shimmer';
+import {mainId, swiggy_api_URL} from '../constants';
 import { Link  } from "react-router-dom";
  
-import  {addItem,removeItem} from '../utils/cartSlice';
+import  {addItem,removeItem} from '../../utils/cartSlice';
 import { useDispatch } from 'react-redux';
+import Shimmer from './../Shimmer';
 
 
 function filterData(searchText,restaurants){
@@ -126,109 +128,4 @@ const Apidata = () => {
 
 export default Apidata ;
 
- {/** *
-
  
-// SRC: its a Common Convection in Developer Industry
-// modular and Findable
-
-// UseState
-// we Create the Local State Variables Which Comes As Named Import From The React Library 
-
-// example :
-
-
-// reconciliation Happens In UseState?
-
-// const [clicked, setclicked] = useState("false");
-// <h1 className="text-white">{clicked}</h1>
-// <button onClick={()=>{
-//   setclicked("true");
-// }} />
-
-
-// earlier The Value is {False}
-
-// it will Just Re-render the {h1} and Make It {true} After Clicking 
-
- // on click Modify Local Variable With the Filter Data *
-// update the state 
-
-
-// filterdata(searchText, restaurants);
-// search the item from the FoodList (list Of Restaurants(FoodList))
-
-
-
-    
-    
-// if(filterdRestaurants?.length===0)
-// return <h1 className="text-white text-xl" >No Restaurants Found</h1>
-
-
-
-
-
-
-
- // Create Context?
-    
-//  <input type="text"
-//  value={user.name}
-//  onChange = {(e)=>{
-//    setUser({
-//      ...user,
-//      name:e.target.value,
-//    });
-//  }}>
-//  </input>
- 
-// <input type="text"
-// className="md:w-[15rem] w-[15rem] text-[1rem] md:text-[1.3rem]
-//    text-black bg-slate-100 h-10 pl-6 font-poppins rounded-md
-//     md:rounded-l-full outline-none my-4" 
-//  value={user.email}
-//  onChange = {(e)=>{
-//    setUser({
-//      ...user,
-//      email:e.target.value,
-//    });
-//  }}>
- 
-//  </input>
-
-
-
-
-
-
-
-
-addiing to CArt 
-
-
-  const dispatch = useDispatch();
-  
-  const handleAddItem = ()=>{
-      dispatch(addItem("Grapes"))
-  }
-  
-  const handleRemoveItem = ()=>{
-      dispatch( removeItem([]))
-  }
-  
-
-
- <div className=" mt-5 cursor-pointer rounded-2xl p-2 bg-slate-700">
-          <button onClick={()=>handleAddItem()} 
-          className=" m-3 px-5 rounded-[10px] py-2 bg-green-500">Add to Cart
-          </button>
-       
-          <button onClick={()=>handleRemoveItem()} 
-          className="  m-3 px-5  rounded-[10px] py-2 bg-red-500">Remove an Item
-          </button>
-          </div>
-
-
-
-*/}

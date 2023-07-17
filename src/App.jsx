@@ -4,7 +4,7 @@ import {
   Billing,
   Bussiness,
   ControlledCarousel,
-  Header,
+ 
   CardDeal,
   CTA,
   Footer,
@@ -18,6 +18,7 @@ import {
   RestaurantDetail,
   Apidata,
   Aboutus,
+  MockBody
 } from "./components";
 
 
@@ -29,13 +30,14 @@ import store from "./utils/store";
 import Cartpage from "./components/Cartpage";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import Body from "./components/Body";
+ 
 import Bodymenu from "./components/Bodymenu";
 // import Apidata from './components/Apidata';
 import "aos/dist/aos.css";
 import AOS from "aos";
 // import Clients from './components/Clients';
 import MarqueeLogo from './components/MarqueeLogo';
+
 
 
 
@@ -85,7 +87,7 @@ const App = () => {
               data-aos-duration="400"
               data-aos-delay="500"
             >
-              <Body />
+              <MockBody />
             </div>
 
             <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

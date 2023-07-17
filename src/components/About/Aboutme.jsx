@@ -8,7 +8,7 @@
         <h2 className=" font-poppins  text-blue-400  mt-[3rem]  md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           AboutME
         </h2>
-        <div className="h-full flex flex-col  sm:flex-row  mt-[2rem] transition-none duration-100  sm:mt-[1rem] justify-center items-center gap-5   m-5 ">
+        <div className="h-full flex flex-col  sm:flex-row  mt-[2rem] transition-none duration-100  sm:mt-[1rem] justify-center items-center gap-5   m-2 ">
           <img
             src={jubair}
             className=" flex flex-1    rounded-full   shadow2   border-1 border-yellow-500   transition duration-300 ease-in-out transform hover:scale-105 p-3  cursor-pointer     h-[300px] object-cover   sm:rounded-full"
@@ -36,8 +36,8 @@
               
             
 
-              <a href=" " target="_blank">
-                <button className="bg-black-500 text-blue-400 hover:text-white  flex__style  text-[20px]  w-full  font-poppins    hover:bg-cyan-700 mt-5 font-normal py-2 px-4 rounded-[10px] border border-blue-500 shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+              <a href="https://www.linkedin.com/in/imjubairahmed/" target="_blank">
+                <button className="bg-black-500 z-50 text-blue-400 hover:text-white  flex__style  text-[20px]  w-full  font-poppins    hover:bg-cyan-700 mt-5 font-normal py-2 px-4 rounded-[10px] border border-blue-500 shadow-md transition duration-300 ease-in-out transform hover:scale-105">
                   {" "}
                   LETS CONNECT <img className="h-[30px] ml-2 " src={linkdin} alt="" />
                 </button>

@@ -7,7 +7,7 @@ import { addItem } from "../utils/cartSlice";
 import ShimmerMenu from "./ShimmerMenu";
 import { idIndexPair } from "../utils/helper";
 import { getMenuFromResID } from "../utils/helper";
-import Navbar from "./Navbar";
+import Navbar from '../components/Header/Navbar';
 
 
 

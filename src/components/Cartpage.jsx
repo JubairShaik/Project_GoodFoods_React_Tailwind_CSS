@@ -4,7 +4,8 @@ import Fooditem from './Fooditem';
 import Footer from './Footer';
 import { clearCart } from "../utils/cartSlice"; 
 import emptycart   from "../assets/emptycart.png"; 
-import Navbar from './Navbar';
+ 
+import Navbar from './Header/Navbar';
  
 const Cartpage = () => {
 

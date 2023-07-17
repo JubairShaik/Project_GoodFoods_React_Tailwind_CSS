@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
-import { close,  menu } from "../assets";
-import { navLinks } from "../constants";
+import { close,  menu } from "../../assets";
+import { navLinks } from "../../constants";
 // import UserContext  from "../utils/userContext"
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';

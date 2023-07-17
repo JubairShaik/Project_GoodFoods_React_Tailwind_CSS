@@ -1,5 +1,7 @@
 import React from "react";
-import { IMG_CDN_URL, NO_IMAGE_AVAILABLE } from "../constants";
+import { IMG_CDN_URL, NO_IMAGE_AVAILABLE } from "../../constants";
+import { star } from "../../assets";
+
 
 const BodyCard = ({
   name,
@@ -31,7 +33,7 @@ const BodyCard = ({
           {avgRating}{" "}
           <img
             className="h-3"
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+            src={star}
             alt=""
           />
         </p>
@@ -42,7 +44,7 @@ const BodyCard = ({
       </h4>
       <p className="w-[100%] h-[1px] bg-slate-400 mb-2"></p>
       <div className="flex justify-between mx-2 ">
-        <h3 className="cuisines text-[15px] text-gray-500">
+        <h3 className="cuisines text-[15px] text-gray-300">
           {firstTwoCuisines}
         </h3>
         <h4 className=" text-[15px]">📍{lastMileTravelString} away</h4>

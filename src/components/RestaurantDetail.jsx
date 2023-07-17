@@ -2,14 +2,14 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import {useEffect,useState} from 'react';
 import {mainId ,swiggy_menu_api_URL } from './constants'
-import Shimmer2 from './Shimmer2';
+import Shimmer from './Shimmer';
 import Footer from "./Footer";
 import  {addItem,removeItem} from '../utils/cartSlice';
 import { useDispatch } from 'react-redux';
 import CartBag from './CartBag';
 import { useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from '../components/Header/Navbar';
  
 
  
@@ -57,7 +57,7 @@ import Navbar from './Navbar';
 
          
     }
-  return restaurants.length === 0 ? (<Shimmer2/>):(
+  return restaurants.length === 0 ? (<Shimmer/>):(
 
  <>
 

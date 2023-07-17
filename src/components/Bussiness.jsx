@@ -33,7 +33,7 @@ const Bussiness = () => {
   return (
     <>
       <div>
-        <h2 className="text-gradient text-[2.4rem] sm:text-[3.4rem] text-center font-poppins">
+        <h2 className="text-gradient text-[2.3rem] sm:text-[3.4rem] text-center font-poppins">
          About Bussiness
         </h2>
       </div>
@@ -54,7 +54,7 @@ const Bussiness = () => {
           <img className=" h-full sm:h-[460px] relative "  src={girl} alt="" />
         <div 
       data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1200"
-      className="absolute z-[2] w-[66%] h-[85%] bottom-[70px] right-[100px]  orange"/>
+      className="absolute z-[2] w-[66%] h-[85%] bottom-[70px] right-[100px]   sm:w-[16%] sm:h-[25%] sm:bottom-[30px] sm:right-[10px]  orange"/>
       </div>
      
   
