@@ -1,0 +1,31 @@
+<!-- ----------------------MAIN PAGE---------------------- -->
+<!---------------- FILE AND FOLDER STRUCTURE  --------------->
+
+
+<!-- *page 1----- -->
+-Navbar
+
+-Hero
+
+-Stats
+
+-Body(MOCKDATA) _ITEMS (OnClick=> ItemDataPage ) *page2
+
+<!-- ---Sections--- -->
+
+-DealsPage(OnClick=> about RESTAURANT ) *page 3 
+                                        
+-Testimonial (section)
+
+-QNA (section)
+
+-Marquee (section)
+
+-CTA (Call to Action Page) (section)
+
+<!-- ---Sections--- -->
+
+-Footer
+
+
+<!-- ALL THE SECTION COMPONENTS WILL PRESENT IN SECTION FOLDER -->

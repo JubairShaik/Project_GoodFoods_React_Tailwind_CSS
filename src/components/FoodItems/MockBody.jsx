@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { filterData } from "../../utils/helper.js";
 import { ALL_RESTAURANTS_LIST } from "../../mocks/mockData";
 import BodyCard from './BodyCard';
-import Shimmer from './../Shimmer';
-
+import Shimmer from './../RealtimeData_cors/Shimmer';
+// Shimmer
 
 function MockBody() {
 

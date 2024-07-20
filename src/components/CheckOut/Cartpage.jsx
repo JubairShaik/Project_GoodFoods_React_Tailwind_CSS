@@ -1,11 +1,10 @@
 import React from 'react'
 import { useSelector ,useDispatch} from "react-redux";
-import Fooditem from './Fooditem';
-import Footer from './Footer';
-import { clearCart } from "../utils/cartSlice"; 
-import emptycart   from "../assets/emptycart.png"; 
  
-import Navbar from './Header/Navbar';
+import { clearCart } from "../../utils/cartSlice"; 
+import {emptycart} from "@assets"; 
+ 
+import{ Navbar , Footer , Fooditem }from '@components';
  
 const Cartpage = () => {
 

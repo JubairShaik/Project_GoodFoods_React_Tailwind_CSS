@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import { girl, cake } from "../../assets";
+import { girl, cake } from "@assets";
 
-import {Billing, Bussiness, Navbar, QnA, Footer } from '../index.js';
+import {Billing, Bussiness, Navbar, Questions , Footer } from '../index.js';
 
 
 

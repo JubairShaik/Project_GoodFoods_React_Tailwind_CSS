@@ -1,6 +1,6 @@
   import React from "react";
 
-  import { jubair, linkdin ,portfolio} from "../../assets";
+  import { jubair, linkdin ,portfolio} from "@assets";
 
   const Aboutme = () => {
     return (

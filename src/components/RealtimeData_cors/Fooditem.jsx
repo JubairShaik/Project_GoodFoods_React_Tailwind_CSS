@@ -1,5 +1,5 @@
 import React from 'react'
-import { mainId } from './constants';
+import { mainId } from '../constants.js';
 
 
 const Fooditem = (

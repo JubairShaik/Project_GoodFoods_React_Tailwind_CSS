@@ -48,6 +48,7 @@ export {
   quotes,
   burgur,
   menu,
+  emptycart,
   hamburger,
   diet,
   delivery,

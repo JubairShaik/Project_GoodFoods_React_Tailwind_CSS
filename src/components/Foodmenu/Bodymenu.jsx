@@ -4,12 +4,14 @@ import { useParams } from "react-router-dom";
 import { IMG_CDN_URL, NO_IMAGE_AVAILABLE } from "../../constants/index.js";
 import { ARRAY_OF_MENU_OF_RESTAURANTS } from "../../mocks/mockData.js";
 import { addItem } from "../../utils/cartSlice";
-import ShimmerMenu from "../ShimmerMenu";
 import { star } from "../../assets";
 import { idIndexPair ,getMenuFromResID  } from "../../utils/helper";
-import Navbar from './../Header/Navbar';
- import { Link } from "react-router-dom";
- 
+
+import {Navbar ,ShimmerMenu} from '@components';
+import { Link } from "react-router-dom";
+
+
+
 export default function Bodymenu() {
   const { resId } = useParams();
   const dispatch = useDispatch();

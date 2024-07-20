@@ -1,6 +1,6 @@
-import styles from "../style";
+import styles from "@style";
  
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks, socialMedia } from "@constants";
 import {useContext } from "react";
 import { Link } from 'react-router-dom';
  

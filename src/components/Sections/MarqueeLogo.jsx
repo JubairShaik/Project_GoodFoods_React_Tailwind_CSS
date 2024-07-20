@@ -1,7 +1,7 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 
-import { Zomato , ubereats , Swiggy } from "../assets";
+import { Zomato , ubereats , Swiggy } from "@assets";
 
 
 

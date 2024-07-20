@@ -1,8 +1,10 @@
 import React from "react";
-import { lemon } from "../assets";
-import Button from "./Button";
-import styles, { layout } from "../style";
+import { lemon } from "@assets";
+import {Button} from "@components"
+;
+import styles, { layout } from "@style";
 import { Link } from "react-router-dom";
+
 
 const CardDeal = () => {
   return (

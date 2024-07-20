@@ -1,67 +1,111 @@
-import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Bussiness from "./Bussiness";
-import Clients from "./Clients";
-import CTA from "./CTA";
-import Footer from "./Footer";
-import Testimonials from "./Testimonials";
-import QnA  from "./QnA";
-import Error  from "./Error";
- 
-import CartBag  from "./CartBag";
-import RestaurantDetail  from "./RestaurantDetail";
-import Underconstruction  from "./Underconstruction";
- 
- 
-
 // HEADER
+import Navbar from "./Header/Navbar";
+import Hero from "./Header/Hero";
+import Stats from "./Header/Stats";
 
-import Navbar from './Header/Navbar';
-import Stats from './Header/Stats';
-import Hero from './Header/Hero';
+// BODY  (MockData) fooditemsFolder ------
+import MockBody from "./FoodItems/MockBody";
+// import Apidata from './FoodItems/Apidata';
+import Card from "./FoodItems/Card";
 
-// FOODITEMS
+import Bodymenu from "./Foodmenu/Bodymenu";
 
-import MockBody from './FoodItems/MockBody';
-import Apidata from './FoodItems/Apidata';
+//SECTIOINS
 
-// ABOUT 
-import Aboutme from './About/Aboutme';
-import Aboutus from './About/Aboutus';
+import Billing from "./Sections/Billing";
+import Bussiness from "./Sections/Bussiness";
+import Testimonials from "./Sections/Testimonials";
+import Questions from "./Sections/Questions";
+import CTA from "./Sections/CTA";
+
+import CardDeal from "./Sections/CardDeal";
+import MarqueeLogo from "./Sections/MarqueeLogo";
+
+//FOOTER
+
+import Footer from "./Footer/Footer.jsx";
+
+//ABOUT US (PAGE 02 )
+
+import Aboutme from "./About/Aboutme.jsx";
+import Aboutus from "./About/Aboutus.jsx";
+
+// ALL SMALL COMPONENTS
+
+import Button from "./All_Small_Components/Button.jsx";
+import Error from "./All_Small_Components/Error.jsx";
+import GetStarted from "./All_Small_Components/GetStarted.jsx";
+import FeedbackCard from "./All_Small_Components/FeedbackCard.jsx";
+import Underconstruction from "./All_Small_Components/Underconstruction.jsx";
+
+// import Error  from "./Error";
+
+// import RestaurantDetail  from "./RestaurantDetail";
+// import Underconstruction  from "./Underconstruction";
+
+import CartBag from "./CheckOut/CartBag.jsx";
+import Cartpage from "./CheckOut/Cartpage";
+import Fooditem from "./RealtimeData_cors/Fooditem";
+import ShimmerMenu from "./RealtimeData_cors/ShimmerMenu";
 
 
+// Fooditem
 
-import Bodymenu from './Foodmenu/Bodymenu';
+// ShimmerMenu
+// // FOODITEMS
 
+// // ABOUT
+// import Aboutme from './About/Aboutme';
+// import Aboutus from './About/Aboutus';
 
-Bodymenu
+// import Aboutme from './About/Aboutme';
+import Login from "./Auth_pages/Login";
+import SignUp from './Auth_pages/SignUp';
+import Restaurants from './RealtimeData_cors/Restaurants';
+import Shimmer from './RealtimeData_cors/Shimmer';
+// import Card from './FoodItems/Card';
+import Search from './RealtimeData_cors/Search';
+import RestaurantCard from './RealtimeData_cors/RestaurantCard';
+// import Restaurants from './RealtimeData_cors/Restaurants';
+ import RestaurantsShimmer from './RealtimeData_cors/RestaurantsShimmer';
 
 export {
-  
   Navbar,
+  
+RestaurantsShimmer,
+RestaurantCard,
+  Login,
+  Shimmer,
+  Stats,
+  Cartpage,
+  Hero,
   MockBody,
-  Apidata,
-
+  Card,
+  FeedbackCard,
+  Restaurants ,
+  GetStarted,
+  Fooditem,
+  MarqueeLogo,
   Aboutme,
+  Search,
+  SignUp,
   Aboutus,
-
   Bodymenu,
- 
   CartBag,
+  Button,
   Underconstruction,
-  RestaurantDetail,
- 
+  // RestaurantDetail,
   Billing,
   Error,
- 
   CardDeal,
   Bussiness,
-  Clients,
+  ShimmerMenu,
   CTA,
-  Stats,
   Footer,
   Testimonials,
-  Hero,
-  QnA,
-  
+  Questions,
+ 
+
+
+ 
 };

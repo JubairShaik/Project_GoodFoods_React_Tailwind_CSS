@@ -1,9 +1,9 @@
 import React from "react";
-import { features } from "../constants";
-import styles, { layout } from "../style";
-import Button from "./Button";
+import { features } from "@constants";
+import styles, { layout } from "@style";
+import {Button} from "@components";
+import { girl } from "@assets";
 
-import { girl } from "../assets";
 
 
 

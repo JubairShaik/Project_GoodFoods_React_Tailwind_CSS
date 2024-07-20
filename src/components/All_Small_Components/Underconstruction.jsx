@@ -1,12 +1,10 @@
 import React from 'react'
-import {construction} from "../assets"
+import {construction} from "@assets"
 
 
 
 
 const Underconstruction = () => {
-
-  
   return (
     <>
      

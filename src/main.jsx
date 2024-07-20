@@ -2,9 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import Error from './components/Error';
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
  
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import {appRouter} from './App' ;
 import {Provider} from "react-redux" ;
 import store from "./utils/store";

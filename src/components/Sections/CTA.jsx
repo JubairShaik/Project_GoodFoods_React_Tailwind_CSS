@@ -1,7 +1,9 @@
 import React from "react";
-import Button from "./Button";
-import styles from "../style";
-import GetStarted from "./GetStarted";
+import {Button , GetStarted }from "@components";
+
+import styles from "@style";
+ 
+
 
 const CTA = () => (
   <section

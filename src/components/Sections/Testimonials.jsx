@@ -1,8 +1,8 @@
 import React from 'react'
-import { feedback} from '../constants';
-import styles, {layout} from '../style';
-import FeedbackCard from './FeedbackCard'
-import GetStarted from './GetStarted';
+import { feedback} from '@constants';
+import styles, {layout} from '@style';
+import {FeedbackCard,GetStarted} from '@components'
+ 
 
 const Testimonials = () => {
   return (
